@@ -1,0 +1,10 @@
+message Family {
+    required string surname = 1;
+    repeated Person person = 2;
+}
+
+message Person {
+    required string firstName = 1;
+    optional string middlename = 2;
+    required uint32 age = 3;
+}
